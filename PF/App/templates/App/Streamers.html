@@ -1,0 +1,45 @@
+{% extends "App/madre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-left rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-lower text-center mb-4"">lista de streamers</span>
+                    </h2>
+                    <ul class="two-column-list">
+                        {% for s in streamers %}
+                        <li>
+                            <img class="streamer-image" src="{{ s.img.url }}" width="200">
+                            <b>{{ s.username }}</b>
+                            <a href="{{ s.link }}"> ver canal</a>
+                            <br>
+                            <br>
+                        </li>
+                        {% empty %}
+                            <li>No hay streamers disponibles.</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .streamer-image {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    .two-column-list {
+        columns: 2;
+    }
+</style>
+
+
+{% endblock %}

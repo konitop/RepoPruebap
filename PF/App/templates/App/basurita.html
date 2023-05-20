@@ -1,0 +1,80 @@
+{% extends "App/madre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<section class="page-section cta">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-lower">buscar streamers:</span>
+                        <form action="/App/buscarVideo/" method="get">
+    
+                            <input type="text" name="video" id="video">
+                    
+                            <input type="submit" value="Buscar">
+                            
+                         </form>
+                    </h2>
+                    <form action="/App/buscarVideo/" method="get" class="form-inline ms-auto">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">los streamers más</span>
+                        <span class="section-heading-lower">Vistos</span>
+                    </h2>
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" align="left" src="https://static.wikia.nocookie.net/youtubepedia/images/9/9e/AQuackityApariencia.png/revision/latest?cb=20220702141559&path-prefix=es"  width= "200"/>
+                    <p class="intro-text"align="left">⠀⠀⠀<b>Quackity</b></p>
+                    <p class="mb-0"align="left">⠀⠀⠀Seguidores: 5,870,437</p>
+                    <br>
+                    <br>
+                    <br>
+                        <a href="https://www.twitch.tv/quackity" > ver canal </a>
+                    <br>
+                    <br>
+                    <br>
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" align="left" src="https://media.vandalsports.com/i/1200x900/11-2022/20221129121716_1.jpg"  width= "200"/>
+                    <p class="intro-text" align="left">⠀⠀⠀<b>elRubiusOMG</b></p>
+                    <p class="mb-0"align="left">⠀⠀⠀Seguidores: 1,586,616</p>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="https://www.twitch.tv/rubius"> ver canal </a>
+                    <br>
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" align="left" src="https://opgg-static.akamaized.net/meta/images/profile_icons/profileIcon3589.jpg?image=q_auto,f_webp,w_auto&v=1682831347614"  width= "200"/>
+                    <p class="intro-text" align="left">⠀⠀⠀<b>Dantes </b></p>
+                    <p class="mb-0"align="left">⠀⠀⠀Seguidores: 452,501</p>
+                    <br>
+                    <br>
+                    <a href="https://www.twitch.tv/dantes"> ver canal </a>
+                    <br>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <button style="width: 700px; height: 150px; font-size: 30px; background-color: rgb(212, 154, 81); color:rgb(61, 34, 21); font-family: Arial;" onclick=location.href="{% url 'streamerForm' %}">añadir streamer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+{% endblock %}

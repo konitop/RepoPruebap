@@ -1,0 +1,83 @@
+{% extends "App/madre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<section class="page-section cta">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-lower">buscar videos:</span>
+                        <form action="/App/buscarVideo/" method="get">
+
+                            <input type="text" name="video" id="video">
+                    
+                            <input type="submit" value="Buscar">
+                            
+                         </form>
+                    </h2>
+                    <form action="/App/buscarVideo/" method="get" class="form-inline ms-auto">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-lower">videos recientes:</span>
+                    </h2>
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" align="left" src="https://64.media.tumblr.com/d349e02050a35a918ed9f1e174e5fa0e/d76b30e16786e824-50/s640x960/0577fbc89b88f5b457ddc576f65054b62b824d88.gif"  width= "350"/>
+                    <p class="intro-text"><b>Fire to the Fuse | Worlds 2022 Finals Opening Ceremony Presented by Mastercard</b></p>
+                    
+                    <p class="mb-0"align="left">⠀⠀⠀Visitas: 4,599,636</p>
+                    <p class="mb-0"align="left">⠀⠀⠀Duración: 4:01</p>
+                    <p class="mb-0"align="left">⠀⠀⠀Fecha de publicación: 06/11/2022</p>
+                    <br>
+                        <a href="https://youtu.be/7Me_S0BQR4w?t=31"> ver video </a>
+                    <br>
+                    <br>
+                    <br>
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" align="left" src="https://www.icegif.com/wp-content/uploads/2023/03/icegif-1104.gif"  width= "350"/>
+                    <p class="intro-text"><b>BOCCHI THE ROCK! - Opening | Seishun Complex</b></p>
+                    <p class="mb-0"align="left">⠀⠀⠀Visitas: 1,586,616</p>
+                    <p class="mb-0"align="left">⠀⠀⠀Duración: 1:40</p>
+                    <p class="mb-0"align="left">⠀⠀⠀Fecha de publicación: 14/10/2022</p>
+                    <br>
+                    <a href="https://www.youtube.com/watch?v=dlSbEP4V-gI"> ver video </a>
+                    <br>
+                    <br>
+                    <br>
+                    <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" align="left" src="https://media.tenor.com/7ibZm2wOlIAAAAAC/kaguya-season2.gif"  width= "350"/>
+                    <p class="intro-text"><b>"Kaguya-sama: Love Is War?" Opening Theme </b></p>
+                    <br>
+                    <p class="mb-0"align="left">⠀⠀⠀Visitas: 29,696,976</p>
+                    <p class="mb-0"align="left">⠀⠀⠀Duración: 1:30</p>
+                    <p class="mb-0"align="left">⠀⠀⠀Fecha de publicación: 25/07/2020</p>
+                    <br>
+                    <a href="https://youtu.be/lTlzDfhPtFA"> ver video </a>
+                    <br>
+                    <br>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <button style="width: 700px; height: 150px; font-size: 30px; background-color: rgb(212, 154, 81); color:rgb(61, 34, 21); font-family: Arial;" onclick=location.href="{% url 'videoForm' %}">AÑADIR VIDEO</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

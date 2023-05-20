@@ -1,0 +1,30 @@
+{% extends "App/madre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-lower">Añadir Viewer</span>
+                    </h2>
+                    <form action="" method="post" enctype="multipart/form-data"> {% csrf_token %}
+                        <center>
+                            <table>
+                                {{ miForm.as_table }}
+                            </table>
+                        </center>
+                        <br>
+                        <br>
+                        <input type="submit", value="Enviar">
+                    </form>   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

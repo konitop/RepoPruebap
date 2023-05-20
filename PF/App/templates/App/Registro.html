@@ -1,0 +1,55 @@
+{% extends "App/madre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<section class="page-section cta">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-9 mx-auto">
+                <div class="cta-inner bg-faded text-center rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">streamer - viewer</span>
+                        <span class="section-heading-lower">REGISTRO</span>
+                    </h2>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="https://64.media.tumblr.com/98d92f3f7fbfda2f4402eb449e66de2a/73af174772a4b1cd-72/s640x960/7eab4131307e8e0d5b83894a243e46e2f26fb574.gifv"/>
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">registrarte como</span>
+                    <span class="section-heading-lower">STREAMER</span>
+                </h2>
+                <p class="mb-3">Registrándote como <i>streamer</i>, podrás crear tu propio <b>nombre de usuario</b> y aparecer como "<b>autor</b>" de los videos que subas</p>
+                <div class="intro-button mx-auto">
+                    <a class="btn btn-primary btn-xl" href="{% url 'streamerForm' %}">REGISTRARME</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="page-section clearfix">
+    <div class="container">
+        <div class="intro">
+            <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="https://lh3.googleusercontent.com/-WKId5STKtj8/UwXnKjAX3tI/AAAAAAAAHOM/ZNZnzmRQajk/w497-h280/mashiro.gif"/>
+            <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                <h2 class="section-heading mb-4">
+                    <span class="section-heading-upper">registrarte como</span>
+                    <span class="section-heading-lower">VIEWER</span>
+                </h2>
+                <p class="mb-3">Registrándote como <i>viewer</i>, podrás <b>ver</b> los videos de los streamers. No necesitarás un nombre de usuario</p>
+                <div class="intro-button mx-auto">
+                    <a class="btn btn-primary btn-xl" href="{% url 'viewerForm' %}">REGISTRARME</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
